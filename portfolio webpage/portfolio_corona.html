@@ -1,0 +1,119 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>jQuery Mobile</title>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<style>
+   li { list-style:none; }
+  .picture { list-style:none; padding:0; margin:0; }
+  .picture li { float:left; width:50%;}
+  .picture li a {display:block; margin:5px; border: 1px }
+  .picture li img { display:block; width:50%;  height:auto;}
+  .picture li img:hover { display:block; width:100%;  height:auto;} 
+</style>
+</head>
+
+<body>
+<div data-theme="b">
+	<div data-role="page" id="home">
+		<div data-role="header" data-theme="b">
+			<h1>코로나 소개 앱</h1>
+		</div>
+		<div data-role="content" style="text-align:center">
+			<img src="corona viruses.jpg" width="40%">
+			<ul data-role="listview" data-inset="true">
+				<li><a href="#intro">코로나 소개</a></li>
+				<li><a href="#uhan" >우한 코로나</a></li>
+				<li><a href="#cure1" data-rel="dialog">바이러스 대처법</a></li>
+				<li><a href="#now">현재 국내 현황</a></li>
+			</ul>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<h1>여러분들은 절대 걸리지않게 주의하십시오.</h1>
+		</div>
+	</div>
+	
+	<div data-role="page" id="intro" data-theme="b">
+		<div data-role="header" data-theme="b">
+			<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>			
+			<h1>코로나 소개</h1>
+		</div>
+		<div data-role="content">
+				<div  style="text-align:center">
+					<img src="corona viruses 3D.jpg" width="40%">
+				</div>			
+			<div data-role="collapsible-set" data-theme="b" data-content-theme="e">
+				<div data-role="collapsible" data-collapsed="false">
+					<h3>코로나 바이러스란?</h3>
+					<p>코로나바이러스(영어: Coronavirus, 문화어: 코로나비루스)는 코로나바이러스과(영어: Coronaviridae)의 코로나바이러스아과(Coronavirinae)에 속하는 RNA 바이러스이다.[1][2] 사람과 동물에게 호흡기 및 소화기계 감염을 유발하는 RNA 바이러스이다. 주로 점막전염(黏膜感染),비말전파(飞沫传播)로 쉽게 감염되여 사람에게는 일반적으로 경미한 호흡기 감염을 일으키지만, 드물게 치명적일 수 있다. 소와 돼지에서는 설사를 일으킬 수 있으며, 닭에게는 호흡기 질환을 일으킬 수 있다. </p>
+				</div>
+				<div data-role="collapsible">
+					<h3>코로나의 특징</h3>
+					<p>대부분의 감기가 코로나의 원인이 많아 증세는 감기/폐렴과 비슷하게 기침과 콧물같은 면역 과다 반응으로 비말 감염을 목적으로 한다.</p>
+				</div>
+			</div>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<h1>여러분들은 절대 걸리지않게 주의하십시오.</h1>
+		</div>		
+	</div>
+
+	<div data-role="page" id="uhan" data-theme="b">
+		<div data-role="header" data-theme="b">
+			<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>
+			<h1>신종 코로나 바이러스</h1>
+		</div>
+		<div data-role="content" >
+			<div  style="text-align:center">
+					<img src="new corona viruses.jpg" width="40%">
+				</div>			
+			<div data-role="collapsible-set" data-theme="b" data-content-theme="e">
+				<div data-role="collapsible" data-collapsed="false">
+					<h3>신종 코로나 발생</h3>
+					<p>2019-2020년 우한 코로나바이러스 유행(중국어: 2019新型冠狀病毒疫情) 또는 신종 코로나바이러스감염증 유행[1]은 2019년 12월 중화인민공화국 후베이성 우한시에서 시작된 신종 코로나바이러스 (2019-nCoV)의 감염증 통칭 우한 폐렴(중국어 간체자: 武汉肺炎, 정체자: 武漢肺炎, 병음: Wǔhàn fèiyán 우한 페이얀[*])이라고 부르는 2019-nCoV 급성 호흡기 질환이 유행하는 사태이다. 세계보건기구 (WHO)는 2020년 1월 31일 국제 공중보건 비상사태 (PHEIC)를 선언했다.</p>
+				</div>
+				<div data-role="collapsible">
+					<h3>특징</h3>
+					<p>일반 적인 코로나 바이러스와 증세는 비슷하나 전염성이 강력하며 변종 확률 및 치사율이 일반 감기/폐렴에 비해서 높고 확실한 치료법이 없어 걸리면 나을 때 까지 몸을 가꾸는 것 밖에 하지 못한다.</p>
+				</div>
+			</div>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<h1>여러분들은 절대 걸리지않게 주의하십시오.</h1>
+		</div>
+	</div>
+	
+	<div data-role="page" id="cure1">
+		<div data-role="header">
+			<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>
+			<h1>정부가 추천 하는 예방법</h1>
+		</div>
+		<div data-role="content">
+			<div class="ui-bar ui-bar-e"></div><br/>
+			<li>
+				<iframe width="100%" height="480" src="https://www.youtube.com/embed/GXcKt4MA9cs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+		</div>
+		<div data-role="footer">
+		</div>
+	</div>
+
+	<div data-role="page" id="now">
+		<div data-role="header" data-theme="b">
+			<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>
+			<h1>현재 전세계 감염 현황</h1>
+		</div>
+		<div data-role="content">
+            <ul class="content">
+				<li><iframe width="100%" height="720" src="https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html?fbclid=IwAR38ct2J5kIl9g6TqjFPgfhLNjIFCsY_XnEPN9XC5JlUvssqdgp_614UGiM#/bda7594740fd40299423467b48e9ecf6"></iframe></li>
+            </ul>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<h1>여러분들은 절대 걸리지않게 주의하십시오.</h1>
+		</div>		
+	</div>
+</body>
+</html>
